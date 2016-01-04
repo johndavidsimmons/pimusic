@@ -12,7 +12,9 @@ Light off = GPIO.LOW
 
 The unpressed button starts out as true, when pressed it becomes false and conditions are executed
 
-- set main playlist to random and repeat
+- wait for network
+- clear playlists just in case
+- set play to random on
 - gather all playlists and combine 
 - start playing playlist
 - enter control loop forever
@@ -97,7 +99,7 @@ sleep(60)
 system(clear)
 load_playlist(big_list)
 
-# Set playlist to random and repeat on
+# Set playlist to random
 system(random_on)
 
 #play playlist
